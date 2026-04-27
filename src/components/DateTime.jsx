@@ -12,8 +12,8 @@ const DateTime = () => {
   }, []);
 
   const options = {
-    month: "long", // April
-    weekday: "short", // Mon, Tue
+    month: "long",
+    weekday: "short",
     day: "numeric",
   };
 
@@ -25,7 +25,7 @@ const DateTime = () => {
   const ampm = hours >= 12 ? "PM" : "AM";
 
   hours = hours % 12;
-  hours = hours ? hours : 12; // 0 becomes 12
+  hours = hours ? hours : 12; 
   minutes = minutes < 10 ? "0" + minutes : minutes;
 
 
