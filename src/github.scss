@@ -32,5 +32,17 @@
             text-wrap: nowrap;
             border-radius: 5px;
         }
+
+        .urls{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            
+            a{
+                color: rgb(99, 99, 251);
+                text-decoration: none;
+                font-size: medium;
+            }
+        }
     }
 }

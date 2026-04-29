@@ -18,6 +18,10 @@ const Github = () => {
                         return <p key={idx}>{e}</p>
                     })}
                     </div>
+                    <div className='urls'>
+                        <a href={elem.githubLink}>Repository</a>
+                        <a href={elem.liveLink}>Link</a>
+                    </div>
                 </div>
             )
         })}
