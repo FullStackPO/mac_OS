@@ -12,7 +12,7 @@ const MacWindow = ({children}) => {
         <div className="dot yellow"></div>
         <div className="dot green"></div>
         </div>
-        <div className="owner"><p>Harsh~Arya</p></div>
+        <div className="owner"><p>harsharya ~ zsh</p></div>
         </div>
         <div className="content">
             {children}
