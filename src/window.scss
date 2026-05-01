@@ -1,6 +1,6 @@
 .window{
-    height: 300px;
-    width: 600px;
+    height: 350px;
+    width: 650px;
     background-color: black;
     overflow: auto;
     border-radius: 0.75rem;
@@ -58,4 +58,8 @@
 }
 *::-webkit-scrollbar{
     width: 8px;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 20px;
 }
