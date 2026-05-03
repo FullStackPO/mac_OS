@@ -6,16 +6,28 @@ import Github from './windows/Github'
 import Notes from './windows/Notes'
 import Resume from './windows/Resume'
 import Spotify from './windows/Spotify'
+import Cli from './windows/Cli'
+import { useState } from 'react'
 
 const App = () => {
+
+  const[windowState, setWindowState] = useState({
+    github:false,
+    note:false,
+    resume:false,
+    spotify:false,
+    cli:false
+  })
+
   return (
     <main>
       <Navbar />
-      <Github />
-      <Notes />
-      <Resume />
-      <Spotify />
-      <Dock />
+      {windowState.github && <Github />}
+      {windowState.note && <Notes />}
+      {windowState.resume &&  <Resume />}
+      {windowState.spotify &&  <Spotify />}
+      {windowState.cli &&  <Cli />}
+      <Dock windowState={windowState} setWindowState={setWindowState}/>
     </main>
   )
 }

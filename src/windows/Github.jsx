@@ -9,7 +9,7 @@ const Github = () => {
         <div className='cards'>
             {projects.map((elem, idx)=>{
             return (
-                <div className='card'>
+                <div key={idx} className='card'>
                     <img src={elem.image} alt="" />
                     <h3>{elem.name}</h3>
                     <h5>{elem.description}</h5>
