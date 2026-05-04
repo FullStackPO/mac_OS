@@ -1,10 +1,10 @@
 import React from 'react'
 import MacWindow from './MacWindow'
 
-const Cli = () => {
+const Cli = ({windowName, windowState, setWindowState}) => {
 
     return (
-        <MacWindow>
+        <MacWindow windowName='cli' windowState={windowState} setWindowState={setWindowState}>
           
         </MacWindow>
     )

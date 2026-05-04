@@ -22,11 +22,11 @@ const App = () => {
   return (
     <main>
       <Navbar />
-      {windowState.github && <Github />}
-      {windowState.note && <Notes />}
-      {windowState.resume &&  <Resume />}
-      {windowState.spotify &&  <Spotify />}
-      {windowState.cli &&  <Cli />}
+      {windowState.github && <Github windowName='github' windowState={windowState} setWindowState={setWindowState} />}
+      {windowState.note && <Notes windowName='note' windowState={windowState} setWindowState={setWindowState} />}
+      {windowState.resume &&  <Resume windowName='resume' windowState={windowState} setWindowState={setWindowState} />}
+      {windowState.spotify &&  <Spotify windowName='spotify' windowState={windowState} setWindowState={setWindowState} />}
+      {windowState.cli &&  <Cli windowName='cli' windowState={windowState} setWindowState={setWindowState} />}
       <Dock windowState={windowState} setWindowState={setWindowState}/>
     </main>
   )
